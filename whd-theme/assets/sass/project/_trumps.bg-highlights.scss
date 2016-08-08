@@ -1,0 +1,115 @@
+/*------------------------------------*\
+    #TRUMPS BG-HIGHLIGHTS
+\*------------------------------------*/
+
+.bg--body{
+    background-color:$color-bg-light;     
+}
+
+.bg--dark{
+	background-color: $color-bg-dark;
+	color: $color-bg-dark-text;
+	.widget-title{
+		color: $color-theme-6;
+	}
+}
+
+.bg--opaq,
+%bg--opaq{
+	@include rgba-background($color-gray-dark,.90);
+	color:$color-bg-dark-text;
+}
+
+.bg--opaq,
+.bg--dark,
+%bg--opaq{
+	a:not(.btn,.site-nav__link)	{
+		color:$color-bg-dark-link;		
+	}
+	h1,h2,h3,h4,h5,h6{
+		color: $color-bg-dark-text;
+	}
+}
+
+.bg--ffw-offset,
+.bg--ffw-offset-large{ // Background full width
+	padding: 0 halve($spacing-unit);
+    margin: 0 (-$spacing-unit/2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    overflow: auto;
+    position: relative;	
+}
+
+.bg--ffw-offset{
+	@include media-query(lap-and-up){
+		padding-right:0;
+		margin-right:0;
+		padding-left:400px;
+		margin-left:-400px;
+	}
+	@include media-query(retina){
+		padding-left:1200px;
+		margin-left:-1200px;
+	}
+}
+.bg--ffw-offset-large{ // Background full width offset large
+	@include media-query(lap-and-up){
+		padding-right:0;
+		margin-right:0;
+		padding-left:800px;
+		margin-left:-800px;
+	}
+	@include media-query(retina){
+		padding-left:2400px;
+		margin-left:-2400px;
+	}
+}
+
+.bg--light{
+	background-color: lighten($color-gray-ui,8);
+}
+
+.bg--color-one{
+	background-color: $color-bg-1;
+}
+.bg--color-two{	
+	background-color: $color-bg-2;
+}
+.bg--color-three{	
+	background-color: $color-bg-3;
+}
+.bg--color-four{	
+	background-color: $color-bg-4;
+}
+.bg--color-five{	
+	background-color: $color-bg-5;
+}
+.bg--color-six{	
+	background-color: $color-bg-6;
+}
+
+.bg--center{
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg--overlay{
+	position:relative;
+	&::before{
+		content: "";
+    	display: block;
+    	position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	background: rgba(57,65,89,.7);
+	}
+	& > div:first-of-type{
+		position: relative;
+		z-index: 2;
+	}
+}

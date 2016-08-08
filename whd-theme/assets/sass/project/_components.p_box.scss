@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    #POST BOX
+\*------------------------------------*/
+
+.p_box{
+	position: relative;
+	text-align: center;
+	background-color: $color-body;
+	padding-bottom: halve($spacing-unit);
+}
+
+.p_box__title{
+	margin-bottom: 0;
+}
+.p_box__pos,
+.p_box__com{
+	display: block;	
+}
+
+.p_box__content{
+	margin-top:	halve($spacing-unit);
+}
+.p_box__image{
+	margin:0 auto halve($spacing-unit) auto;	
+	width:100%;
+	@include media-query(lap-and-up){
+		width:auto;
+	}
+}	
+
+.p_box--hover{
+	cursor:pointer;
+}
+
+.p_box--summary{
+	max-width:296px; // foloww medium image size
+}

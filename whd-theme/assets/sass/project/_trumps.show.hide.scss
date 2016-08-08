@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    #SHOW-HIDE
+\*------------------------------------*/
+
+/**
+ * Mixin hide(); in _tools.custom.mixin 
+ */
+.hide,
+%hide { @include hide(); }
+
+@include project-generate-classes(){
+
+	.#{$inuit-generate-spacing-alias}--hide{ @include hide();}
+}
+
+.hide-title{
+	.entry-title{
+		@extend %hide;
+	}
+}

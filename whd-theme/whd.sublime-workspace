@@ -1,0 +1,917 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"im",
+				"image_desk"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"co",
+				"company"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"color-",
+				"color-white"
+			],
+			[
+				"colo",
+				"color-white"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"cl",
+				"class_h"
+			],
+			[
+				"vc",
+				"vc_row_inner"
+			],
+			[
+				"inne",
+				"inner_class"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"di",
+				"disclaimer"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_style"
+			],
+			[
+				"s",
+				"screen"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"te",
+				"textfield"
+			],
+			[
+				"ho",
+				"holder_class"
+			],
+			[
+				"fun",
+				"function_exists"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"c",
+				"classes"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"in",
+				"inuit-base-spacing-unit"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"inli",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "/*------------------------------------*\\\n    #PROJECT\n\\*------------------------------------*/\n\n/**\n * Master Sass file for PROJECT.\n */\n\n/**\n * THEME DATA \n * ======== \n * Wordpress theme is initiated\n *\n *\n * SETTINGS             GLOBAL CONFIG AND SETTINGS\n * ========             ==========================\n * Global...............Site-wide settings and config.\n * Colors...............Color schemes and settings.\n *\n *\n * TOOLS                GLOBAL PREPROCESSOR TOOLING\n * =====                ===========================\n * Functions............Globally-available helper functions.\n * Mixins...............Globally-available mixins.\n *\n *\n * GENERIC              SITE-WIDE STARTING-POINT STYLES\n * =======              ===============================\n * Box-sizing...........Apply global `border-box`.\n * Normalize.css........Use @necolas’ Normalize.css for consistency.\n * Reset................Remove default margins.\n * Shared...............High-level shared traits (mainly for vertical rhythm).\n *\n *\n * BASE                 TYPE (I.E. BARE ELEMENT) SELECTORS\n * ====                 ==================================\n * Page.................Page-level (e.g. `html`, `body`) styles.\n * Headings.............Headings 1–6.\n * Links................Default hyperlink styles.\n *\n *\n * OBJECTS              DESIGN-FREE DESIGN PATTERNS\n * =======              ===========================\n * Buttons..............Unstyled button objects.\n *\n *\n * COMPONENTS           DESIGNED, COMPLETE COMPONENTS\n * ==========           =============================\n * Buttons..............Fully styled buttons and their variants.\n *\n *\n * TRUMPS               HELPERS AND OVERRIDES\n * ======               =====================\n * Widths...............Width helper classes.\n */\n\n/**\n * PROJECT FOLDER STRUCTURE\n * bower_components/ -> csswizardry\n * project/          -> project based customizations\n */\n\n /* THEME DATA  - Wordpress Theme Data Style */\n@import \"theme-data\";\n\n /* SETTINGS             GLOBAL CONFIG AND SETTINGS */\n \n@import \"bower_components/inuit-defaults/settings.defaults\";\n@import \"bower_components/inuit-responsive-settings/settings.responsive\";\n@import \"project/settings.global\";\n@import \"project/settings.colors\";\n\n\n /* TOOLS                GLOBAL PREPROCESSOR TOOLING */\n \n@import \"bower_components/inuit-functions/tools.functions\";\n@import \"bower_components/inuit-mixins/tools.mixins\";\n\n$inuit-responsive-settings: true;\n@import \"bower_components/inuit-responsive-tools/tools.responsive\";\n@import \"project/tools.aliases\";\n@import \"project/tools.project.mixins\";\n\n\n /* GENERIC              SITE-WIDE STARTING-POINT STYLES */\n\n@import \"bower_components/inuit-box-sizing/generic.box-sizing\";\n@import \"bower_components/inuit-normalize/generic.normalize\";\n@import \"bower_components/inuit-reset/generic.reset\";\n@import \"project/generic.shared\";\n@import \"project/generic.inline-block-whitespace\";\n@import \"project/generic.form.fields\";\n\n\n\n /* BASE                 TYPE (I.E. BARE ELEMENT) SELECTORS */\n\n@import \"bower_components/inuit-page/base.page\";\n\n$inuit-heading-size-1:  28px;\n$inuit-heading-size-2:  22px;\n$inuit-heading-size-3:  18px;\n$inuit-heading-size-4:  16px;\n$inuit-heading-size-5:  14px;\n$inuit-heading-size-6:  12px;\n@import \"bower_components/inuit-headings/base.headings\";\n@import \"bower_components/inuit-paragraphs/base.paragraphs\";\n@import \"bower_components/inuit-lists/base.lists\";\n@import \"project/base.links\";\n@import \"project/base.type\";\n@import \"project/base.form.elements\";\n\n /* OBJECTS              DESIGN-FREE DESIGN PATTERNS */\n\n //$inuit-btn-namespace:       $inuit-namespace !default;           => class=\"btn\" to class=\"{namespace}btn\"\n $inuit-btn-padding:         halve($inuit-base-spacing-unit);    // => class=\"btn\" to class=\"{namespace}btn\"\n //$inuit-btn-padding--small:  halve($inuit-btn-padding) !default;\n //$inuit-btn-padding--large:  double($inuit-btn-padding) !default;\n $inuit-btn-background:      $color-brand;\n $inuit-btn-color:           #fff;\n $inuit-btn-border-width:    1px;\n $inuit-btn-border-style:    solid;\n $inuit-btn-border-color:    $inuit-btn-background !default;\n $inuit-btn-radius:          0px;\n \n $inuit-enable-btn--small:   true;\n $inuit-enable-btn--large:   true;\n $inuit-enable-btn--full:    true;\n $inuit-enable-btn--pill:    true;\n \n@import \"bower_components/inuit-buttons/objects.buttons\";\n@import \"bower_components/inuit-box/objects.box\";\n\n\n$inuit-enable-flag--tiny:       true;\n$inuit-enable-flag--small:      true;\n$inuit-enable-flag--flush:      true;\n$inuit-enable-flag--responsive: true;\n@import \"bower_components/inuit-flag/objects.flag\";\n@import \"bower_components/inuit-list-bare/objects.list-bare\";\n@import \"bower_components/inuit-list-inline/objects.list-inline\";\n@import \"bower_components/inuit-list-ui/objects.list-ui\";\n\n $inuit-enable-media--tiny:         true;  \n $inuit-enable-media--small:        true; \n $inuit-enable-media--large:        true; \n $inuit-enable-media--huge:         true; \n $inuit-enable-media--rev:          true; \n $inuit-enable-media--flush:        true; \n $inuit-enable-media--responsive:   true; \n@import \"bower_components/inuit-media/objects.media\";\n\n$inuit-table-border-color:      #f0f0f0;\n\n$inuit-enable-table--compact:   true;\n$inuit-enable-table--comfy: true;\n$inuit-enable-table--cells: true;\n$inuit-enable-table--columns: true;\n$inuit-enable-table--rows: true;\n@import \"bower_components/inuit-tables/objects.tables\";\n@import \"bower_components/inuit-tabs/objects.tabs\";\n@import \"bower_components/inuit-pack/objects.pack\";\n\n $inuit-enable-layout--center: true;\n@import \"bower_components/inuit-layout/objects.layout\";\n@import \"project/objects.wrappers\";\n\n /* COMPONENTS           DESIGNED, COMPLETE COMPONENTS */\n@import \"project/components.page-head\";\n@import \"project/components.site-head\";\n@import \"project/components.site-nav\";\n// @import \"project/components.main-nav-one\";\n// @import \"project/components.main-nav-two\";\n@import \"project/components.main-nav-three\";\n@import \"project/components.pull-quote\";\n@import \"project/components.blockquote\";\n@import \"project/components.lists\";\n@import \"project/components.box\";\n@import \"project/components.band\";\n@import \"project/components.page-micro\";\n@import \"project/components.comments\";\n@import \"project/components.cf7_form\";\n@import \"project/components.page-content\";\n@import \"project/components.divider\";\n@import \"project/components.galleries\";\n@import \"project/components.slider\";\n@import \"project/components.nav-links\";\n@import \"project/components.buttons\";\n@import \"project/components.table\";\n@import \"project/components.widget\";\n@import \"project/components.accordion\";\n@import \"project/components.tabs\";\n@import \"project/components.video\";\n@import \"project/components.debug\";\n\n /* TRUMPS               HELPERS AND OVERRIDES */\n@import \"bower_components/inuit-clearfix/trumps.clearfix\";\n@import \"project/components.shadow\";\n@import \"project/components.card\";\n@import \"project/components.images\";\n\n@import \"project/trumps.show.hide\";\n@import \"project/trumps.screen.reader.text\";\n\n\n $inuit-use-fractions: true;\n@import \"bower_components/inuit-widths/trumps.widths\";\n\n $inuit-enable-margins:                  true;\n $inuit-enable-margins--tiny:            true;\n $inuit-enable-margins--small:           true;\n $inuit-enable-margins--large:           true;\n $inuit-enable-margins--huge:            true;\n \n $inuit-enable-margins--negative:        true;\n //$inuit-enable-margins--negative-tiny:   true;\n //$inuit-enable-margins--negative-small:  true;\n //$inuit-enable-margins--negative-large:  true;\n //$inuit-enable-margins--negative-huge:   true;\n \n $inuit-enable-margins--none:            true;\n \n $inuit-enable-paddings:                 true;\n $inuit-enable-paddings--tiny:           true;\n $inuit-enable-paddings--small:          true;\n $inuit-enable-paddings--large:          true;\n $inuit-enable-paddings--huge:           true;\n \n $inuit-enable-paddings--none:           true;\n@import \"bower_components/inuit-spacing/trumps.spacing\";\n \n $inuit-enable-responsive-margins:                   true;\n $inuit-enable-responsive-margins--tiny:             true;\n $inuit-enable-responsive-margins--small:            true;\n $inuit-enable-responsive-margins--large:            true;\n $inuit-enable-responsive-margins--huge:             true;\n \n $inuit-enable-responsive-margins--negative:         true;\n //$inuit-enable-responsive-margins--negative-tiny:    true;\n //$inuit-enable-responsive-margins--negative-small:   true;\n //$inuit-enable-responsive-margins--negative-large:   true;\n //$inuit-enable-responsive-margins--negative-huge:    true;\n \n $inuit-enable-responsive-margins--none:             true;\n \n $inuit-enable-responsive-paddings:                  true;\n $inuit-enable-responsive-paddings--tiny:            true;\n $inuit-enable-responsive-paddings--small:           true;\n $inuit-enable-responsive-paddings--large:           true;\n $inuit-enable-responsive-paddings--huge:            true;\n \n $inuit-enable-responsive-paddings--none:            true;\n@import \"bower_components/inuit-spacing-responsive/trumps.spacing-responsive\";\n@import \"bower_components/inuit-widths-responsive/trumps.widths-responsive\";\n@import \"project/trumps.responsive.media\";\n@import \"project/trumps.alignments\";\n@import \"project/components.layout-align\";\n@import \"project/trumps.typography\";\n@import \"project/trumps.icons\";\n@import \"project/trumps.bg-highlights\";\n@import \"bower_components/inuit-print/trumps.print\";\n\n",
+			"file": "/C/Users/Z/Desktop/whd-theme/assets/sass/style.scss",
+			"file_size": 9429,
+			"file_write_time": 131149708970000000,
+			"settings":
+			{
+				"buffer_size": 9470,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Z/Desktop/whd-theme/assets/js/theme.js",
+			"settings":
+			{
+				"buffer_size": 5560,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Z/Desktop/whd-theme",
+		"/C/Users/Z/Desktop/whd-theme/assets",
+		"/C/Users/Z/Desktop/whd-theme/assets/sass",
+		"/C/Users/Z/Desktop/whd-theme/assets/sass/project"
+	],
+	"file_history":
+	[
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_components.p_box.scss",
+		"/C/Users/Z/Desktop/whd-theme/style.css",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/style.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_components.fancybox.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/vc_templates/vc_column_text.php",
+		"/D/desktop-server/whd.dev/wp-content/plugins/wps-support/init.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/inc/settings/child-admin-image-sizes.php",
+		"/D/desktop-server/whd.dev/wp-content/plugins/wps-support/inc/wps-support-shortcodes.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/functions.php",
+		"/E/wampold/www/reparatot/wp-content/plugins/converter-modules/module-shortcodes/module-shortcodes.php",
+		"/E/wampold/www/andinidev/wp-content/themes/converter-one/js/site.js",
+		"/E/wampold/www/reparatot/wp-includes/pluggable.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/functions.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/js/theme.js",
+		"/C/Users/Z/Downloads/jquery.fancybox.css",
+		"/D/desktop-server/whd.dev/wp-content/plugins/wps-support/inc/integrations/visual-composer/wps-support-to-vc-shortcodes.php",
+		"/D/desktop-server/whd.dev/wp-content/plugins/wps-support/inc/wps-support-helpers.php",
+		"/D/desktop-server/whd.dev/wp-content/plugins/wps-support/inc/wps-support-meta-fields.php",
+		"/D/desktop-server/whd.dev/wp-content/plugins/wps-support/inc/meta-fields/wps-support-speaker-info.php",
+		"/D/desktop-server/whd.dev/wp-content/plugins/wps-support/inc/wps-support-admin-columns.php",
+		"/D/desktop-server/whd.dev/wp-content/plugins/wps-support/inc/wps-support-custom-ctp-tax.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-support/inc/wps-support-custom-ctp-tax.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/theme-modules/wps-menu-three/inc/settings/child-front-layout-setup.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/theme-modules/wps-menu-three/theme-components/objects/wps-sidenav-one-mobile-nav.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_components.page-head.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/theme-modules/wps-menu-three/assets/js/nav.js",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_base.type.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_components.main-nav-three.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_components.buttons.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/theme-modules/wps-menu-three/wps-module-menu-three-init.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/header.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/theme-hook-build.php",
+		"/D/desktop-server/wimpole.dev/wp-content/themes/wimpoleclinic/assets/js/site.js",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/theme-components/layout-elements/theme-header-layout.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/header.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/theme-modules/wps-menu-two/wps-module-mt-init.php",
+		"/E/wamp/www/converter-one/wp-content/themes/converter-one/js/min/navigation.min.js",
+		"/E/wamp/www/converter-one/wp-content/themes/converter-one/js/site.js",
+		"/D/vagrant-local/www/wpsedge/htdocs/wp-content/themes/wps-prime/assets/js/min/navigation.min.js",
+		"/D/vagrant-local/www/wpstest/htdocs/wp-content/themes/wps-prime/assets/js/min/navigation.min.js",
+		"/D/vagrant-local/www/wps-panda/htdocs/wp-content/themes/wps-prime/assets/js/min/navigation.min.js",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/assets/js/min/navigation.min.js",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/vc_templates/vc_row.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_components.layout-align.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_trumps.alignments.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/assets/js/min/parallax.min.js",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/inc/integrations/visual-composer/shortcodes/wps-vc-row.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/vc_templates/vc_column.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/assets/sass/project/_components.page-head.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_trumps.bg-highlights.scss",
+		"/C/Users/Z/.ssh/id_rsa",
+		"/C/Users/Z/.ssh/id_rsa.pub",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_trumps.typography.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_components.parallax.scss",
+		"/C/Users/Z/AppData/Local/Temp/scp58506/wp-content/themes/wimpoleclinic/functions.php",
+		"/C/Users/Z/AppData/Local/Temp/scp58652/wp-content/themes/wimpoleclinic/functions.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/js/min/paralax.min.js",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_settings.colors.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_components.site-nav.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/inc/settings/child-admin-typography.php",
+		"/C/Users/Z/Desktop/jquery-scrollspy-master/examples/colors.html",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/js/min/theme.min.js",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.sticky.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/project/_settings.global.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/functions.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/style.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_settings.global.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/inc/settings/child-admin-tinymce.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/assets/sass/_theme-data.scss",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/style.css",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/inc/integrations/visual-composer/shortcodes/wps-vc-row-inner.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/vc_templates/vc_row_inner.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/inc/integrations/visual-composer/shortcodes/wps-vc-column-inner.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/vc_templates/vc_column_inner.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/wps-prime/inc/integrations/visual-composer/shortcodes/wps-vc-column.php",
+		"/D/desktop-server/whd.dev/wp-content/themes/whd-theme/assets/sass/_theme-data.scss",
+		"/C/Users/Z/AppData/Local/Temp/scp28527/wp-content/themes/wimpoleclinic/style.css",
+		"/C/Users/Z/AppData/Local/Temp/scp37605/wp-config.php",
+		"/D/desktop-server/wimpole.dev/wp-content/themes/wimpoleclinic/header.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/inc/integrations/visual-composer/wps-vc-helpers.php",
+		"/C/Users/Z/AppData/Local/Temp/scp27173/wp-content/themes/wps-prime/inc/integrations/visual-composer/wps-vc-helpers.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/plugins/wps-support/inc/wps-support-helpers.php",
+		"/C/Users/Z/AppData/Local/Temp/scp22690/wp-content/plugins/wps-support/inc/wps-support-helpers.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/piklist/parts/settings/content-settings.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/inc/settings/wps-front-layout-setup.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.page-head.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.page-content.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/theme-components/default/wps-child-template-tags.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/piklist/parts/meta-boxes/page-margin-reset.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/comments.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.nav-links.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.comments.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/comments.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/inc/theme-options/wps-page-options.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/theme-components/default/wps-front-comment-list.php",
+		"/E/wamp/www/lasermaxx/wp-content/themes/lasermaxx-theme/css/project/_components.comments.scss",
+		"/D/vagrant-local/www/wps-blueprints/htdocs/wp-content/themes/wps-prime-child/assets/sass/style.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/inc/shortcodes/wps-shortcode-helpers.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/inc/integrations/visual-composer/wps-vc-integration.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/inc/integrations/visual-composer/shortcodes/wps-vc-video.php",
+		"/E/wamp/www/andinidev/wp-content/themes/sale-rocket/css/project/_components.comments.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/assets/sass/style.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.video.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/vc_templates/vc_video.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/single-portfolio.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/vc_templates/vc_row_inner.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/theme-components/default/wps-front-template-tags.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/inc/integrations/visual-composer/params/wps-vc-margin-params.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/inc/integrations/visual-composer/params/wps-vc-padding-params.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/plugins/wps-support/inc/integrations/visual-composer/wps-support-to-vc-shortcodes.php",
+		"/C/Users/Z/AppData/Local/Temp/scp44211/clients/wplondon/wp-content/plugins/wps-support/inc/wps-support-shortcodes.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/plugins/wps-support/inc/wps-support-shortcodes.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.pagination.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/archive.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/index.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.site-head.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/inc/settings/child-front-layout-setup.php",
+		"/D/vagrant-local/www/innercords/htdocs/wp-content/themes/innerchords/index.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/inc/hooks-filters/theme-filter-functions.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wps-prime/archive.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/template-parts/content.php",
+		"/D/vagrant-local/www/innercords/htdocs/wp-content/themes/innerchords/assets/sass/project/_components.pagination.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.widget.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.buttons.scss",
+		"/D/vagrant-local/www/innercords/htdocs/wp-content/themes/innerchords/assets/sass/project/_components.buttons.scss",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/inc/settings/child-admin-image-sizes.php",
+		"/E/wamp/www/tunedfishtanks/wp-content/themes/converter-affiliate/inc/child-theme-meta.php",
+		"/D/desktop-server/wpdesignlondon.dev/wp-content/themes/wpdesign-london/assets/sass/project/_components.gravity_form.scss"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"E:\\wamp\\www\\printm\\wp-content\\themes\\sstr",
+			"E:\\wampold\\www\\andinidev\\wp-content\\themes\\sale-rocket",
+			"E:\\wampold\\www\\andinidev\\wp-content\\themes\\converter-one",
+			"E:\\wampold\\www\\reparatot",
+			"E:\\wamp\\www\\andinidev\\wp-content\\themes\\sale-rocket",
+			"E:\\wamp\\www\\converter-one\\wp-content\\themes\\converter-one",
+			"D:\\desktop-server\\whd.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\whd.dev\\wp-content\\themes\\whd-theme\\assets\\sass\\project",
+			"D:\\desktop-server\\whd.dev\\wp-content\\themes\\wps-prime\\assets\\sass\\project",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wpdesign-london\\assets\\sass\\project",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"E:\\wamp\\www\\lasermaxx\\wp-content\\themes\\converter-one",
+			"E:\\wamp\\www\\lasermaxx\\wp-content\\themes\\lasermaxx-theme",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wpdesign-london",
+			"D:\\vagrant-local\\www\\innercords\\htdocs\\wp-content\\themes\\innerchords",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\vagrant-local\\www\\innercords\\htdocs\\wp-content\\themes\\innerchords",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\vagrant-local\\www\\innercords\\htdocs\\wp-content\\themes\\innerchords",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wpdesign-london\\assets\\sass\\project",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wpdesign-london\\assets\\sass\\project",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime\\inc\\integrations",
+			"D:\\vagrant-local\\www\\solarsquad\\htdocs\\wp-content\\themes\\solar-squad",
+			"D:\\vagrant-local",
+			"D:\\desktop-server\\wpdesignl.dev",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime\\inc\\integrations",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesign.dev\\wp-content\\plugins\\js_composer",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\plugins\\wps-support",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\plugins\\our-products",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\plugins\\our-products",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\plugins\\our-products",
+			"D:\\desktop-server\\wpdesign.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesign.dev\\wp-content\\plugins\\piklist\\add-ons\\piklist-demos\\parts\\workflows",
+			"D:\\desktop-server\\wpdesign.dev\\wp-content\\themes\\wpdesign",
+			"D:\\desktop-server\\wpdesign.dev\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\wpdesign.dev\\wp-content\\themes\\wps-prime\\theme-components",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\desktop-server\\photocourses.dev\\wp-content\\plugins\\piklist\\add-ons",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\themes\\wps-prime-child-vc",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\themes\\wps-prime-child",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\themes\\wps-prime\\inc",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\themes\\wps-prime\\assets\\sass",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\include\\classes\\shortcodes",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\include",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\assets\\js",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\include",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\include\\classes\\shortcodes",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\include\\classes\\core",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\include\\classes\\shortcodes",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\include",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\themes\\wps-prime-child-vc",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\assets\\js",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\include\\classes\\shortcodes",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\assets\\js",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\total\\htdocs\\wp-content\\themes\\Total",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer\\include\\classes\\shortcodes",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\total\\htdocs\\wp-content\\themes\\Total",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\plugins\\js_composer",
+			"D:\\vagrant-local\\www\\total\\htdocs\\wp-content\\themes\\Total",
+			"D:\\vagrant-local\\www\\wpsedge\\htdocs\\wp-content\\themes\\wps-dev",
+			"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\vagrant-local\\www\\wpstest\\htdocs\\wp-content\\themes\\wps-test-child\\assets\\sass\\project",
+			"D:\\vagrant-local\\www\\wpstest\\htdocs\\wp-content\\themes\\wps-test-child\\theme-modules\\wps-menu-two",
+			"D:\\vagrant-local\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\vagrant-local\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime\\assets\\sass\\bower_components",
+			"D:\\vagrant-local\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\VVV-develop\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\VVV-develop\\www\\wps-prime\\htdocs\\wp-content\\plugins\\wps-helper-plugin",
+			"D:\\VVV-develop\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\development\\vagrant\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime\\sass\\project",
+			"D:\\development\\vagrant\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\development\\vagrant\\www\\wps-prime\\htdocs\\wp-content\\themes\\_s",
+			"D:\\development\\vagrant\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\development\\vagrant\\www\\wps-prime\\htdocs\\wp-content\\themes\\_s",
+			"D:\\development\\vagrant\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\development\\vagrant\\www\\wps-prime\\htdocs\\wp-content\\themes\\_s",
+			"D:\\development\\vagrant\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\development\\vagrant\\www\\wpshapers\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\development\\vagrant\\www\\wpshapers\\htdocs\\wp-content\\themes\\wpshapers-theme\\css\\project",
+			"D:\\development\\vagrant\\www\\wpshapers\\htdocs\\wp-content\\themes\\wpshapers-theme",
+			"D:\\development\\vagrant\\www\\wpshapers\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\development\\vagrant\\www\\wpshapers\\htdocs\\wp-content\\themes\\wpshapers-theme\\css\\bower_components",
+			"D:\\development\\vagrant\\www\\wpshapers\\htdocs\\wp-content\\themes\\wps-prime",
+			"D:\\development\\vagrant\\www\\wpshapers\\htdocs\\wp-content\\themes\\wpshapers-theme\\css\\project",
+			"D:\\development\\vagrant\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"picture",
+			"srcset",
+			"scrset",
+			"picture",
+			"scrset",
+			"picture",
+			".'\"  ",
+			"$image_small",
+			"$image_large",
+			"$image_id",
+			"srcset",
+			"responsive",
+			"helper",
+			"responsive",
+			"respoinsive",
+			"picturefill",
+			"padding",
+			"$output",
+			"url('",
+			"1",
+			"$(this)",
+			"($('.p_box__content'))",
+			"this",
+			"$post->ID",
+			"checkbox",
+			"pos",
+			"get_post_meta($post_id,'speaker_position', true)",
+			"speaker_position",
+			"portfolio",
+			"speaker_info",
+			"speaker_position",
+			"meta-box-text",
+			"page_pre_content",
+			"wysiwyg",
+			"mobile_menu",
+			"(mobile_menu",
+			"box",
+			"html",
+			"html,.site",
+			".site",
+			"htm, .site",
+			"style",
+			"$style",
+			"fonts",
+			" 0.2s",
+			"0.2",
+			"scrolled",
+			"0.5",
+			"1s",
+			" 2s",
+			"2",
+			"0.8",
+			"logo",
+			"$id",
+			" http://www.yoursite.com",
+			"top-banner-section",
+			"top-se",
+			" color: red;",
+			"bg--color-one mt p",
+			"300",
+			"!important",
+			"side-lables",
+			"side-label",
+			"label ",
+			"'",
+			"get_styesheet_directory_uri",
+			"30",
+			"/",
+			"http:/",
+			"newdomainname.com",
+			"www.olddomainname.com",
+			"form--",
+			"#3ba7f7",
+			"ucwords",
+			"hentry",
+			"child_pa",
+			"margin-to",
+			"45px",
+			"meta-nav_symbol",
+			"comment",
+			";\n",
+			"comment",
+			"row",
+			"40",
+			".nav-links ",
+			"30",
+			"wps_prime_post_nav",
+			"show_excerpt",
+			"post_class",
+			"main_class",
+			"layout",
+			"wps_prime_paging_nav",
+			"pagination",
+			"page-numbers",
+			"page-numbers current",
+			"meta",
+			"theme_mini",
+			"'converter'",
+			"meta-content",
+			".entry-intro",
+			"255",
+			"dark",
+			" 0.3s",
+			"500m",
+			"responsive-tabs",
+			"tabs__list",
+			"tabs_list",
+			"url",
+			"$args",
+			"wp_enqueue_style",
+			"add_shortcode('tabby'",
+			"cc_",
+			"cc_tabby_plugin_version()",
+			"tabby",
+			"type",
+			"icon",
+			"'my-text-domain'",
+			"WPBakeryShortCode_wps_all_slider",
+			"tabby",
+			"google",
+			"ultimate_google_map",
+			"site-content",
+			"color",
+			"ico",
+			"0",
+			"margin ",
+			"height",
+			"head"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"'wps-theme-support'",
+			"http://clients.wpshapers.com/solarsquad",
+			"[wps_mediabox",
+			"[/wps_mediabox]",
+			"[wps_button",
+			"[/wps_list]",
+			"[/wps_ico]",
+			"[/wps_item]",
+			"[/wps_layout",
+			"[wps_main_email]",
+			"[wps_main_phone_nr]",
+			"[wps_list",
+			"[wps_ico]",
+			"[wps_ico",
+			"[\\wps_layout",
+			"[wps_layout",
+			"wps_prime_paging_nav()",
+			"echo wps_prime_paging_nav()",
+			"get_template_part( 'template-parts/content'",
+			"wps_prime",
+			"'wps-prime'",
+			"wps_prime_",
+			"wps",
+			"wps_prime",
+			"WPS Prime",
+			"wps-prime",
+			"; ",
+			" "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "D:\\desktop-server\\whd.dev\\wp-content\\themes\\whd-theme"
+		},
+		{
+			"path": "C:\\Users\\Z\\Desktop\\whd-theme"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Z/Desktop/whd-theme/assets/sass/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5984,
+								5671
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1696.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "/C/Users/Z/Desktop/whd-theme/assets/js/theme.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2652,
+								2652
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1016.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.690858739584,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "new",
+		"selected_items":
+		[
+			[
+				"new",
+				"D:\\desktop-server\\newyou.dev\\wp-content\\themes\\newyou\\newyou.sublime-workspace"
+			],
+			[
+				"londo",
+				"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wpdesign-london\\Webdesign London.sublime-project"
+			],
+			[
+				"lond",
+				"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wpdesign-london\\Webdesign London.sublime-project"
+			],
+			[
+				"blue",
+				"D:\\vagrant-local\\www\\wps-blueprints\\htdocs\\wp-content\\themes\\wps-prime\\Blueporints.sublime-project"
+			],
+			[
+				"london",
+				"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wpdesign-london\\Webdesign London.sublime-project"
+			],
+			[
+				"arc",
+				"D:\\vagrant-local\\www\\arc\\htdocs\\wp-content\\themes\\wps-arc\\ARC.sublime-workspace"
+			],
+			[
+				"",
+				"D:\\desktop-server\\wpdesign.dev\\wp-content\\themes\\wpdesign\\wpdesign.sublime-workspace"
+			],
+			[
+				"wplon",
+				"D:\\desktop-server\\wpdesignlondon.dev\\wp-content\\themes\\wpdesign-london\\Webdesign London.sublime-project"
+			],
+			[
+				"you",
+				"D:\\desktop-server\\newyouageless.dev\\wp-content\\themes\\newyou\\newyou.sublime-workspace"
+			],
+			[
+				"arcbo",
+				"D:\\vagrant-local\\www\\arc\\htdocs\\wp-content\\themes\\wps-arc\\ARC.sublime-workspace"
+			],
+			[
+				"meta",
+				"D:\\vagrant-local\\www\\metaapnea\\htdocs\\wp-content\\themes\\metaapnea\\MetaApnea.sublime-project"
+			],
+			[
+				"inner",
+				"D:\\vagrant-local\\www\\innercords\\htdocs\\wp-content\\themes\\innerchords\\Innerchords.sublime-workspace"
+			],
+			[
+				"inne",
+				"D:\\vagrant-local\\www\\innercords\\htdocs\\wp-content\\themes\\innerchords\\Innerchords.sublime-workspace"
+			],
+			[
+				"inn",
+				"D:\\vagrant-local\\www\\innercords\\htdocs\\wp-content\\themes\\innerchords\\Innerchords.sublime-workspace"
+			],
+			[
+				"in",
+				"D:\\vagrant-local\\www\\innercords\\htdocs\\wp-content\\themes\\innerchords\\Innerchords.sublime-workspace"
+			],
+			[
+				"solar",
+				"D:\\vagrant-local\\www\\solarsquad\\htdocs\\wp-content\\themes\\solar-squad\\Solar-Squad.sublime-project"
+			],
+			[
+				"sol",
+				"D:\\vagrant-local\\www\\solarsquad\\htdocs\\wp-content\\themes\\solar-squad\\Solar-Squad.sublime-project"
+			],
+			[
+				"prime",
+				"D:\\vagrant-local\\www\\wps-prime\\htdocs\\wp-content\\themes\\wps-prime\\WPS-PRIME.sublime-project"
+			],
+			[
+				"prac",
+				"D:\\vagrant-local\\www\\practicert\\htdocs\\wp-content\\themes\\wps-prime-child\\Practice-RT.sublime-workspace"
+			],
+			[
+				"wpsed",
+				"D:\\vagrant-local\\www\\wpsedge\\htdocs\\wp-content\\themes\\wps-dev\\WPS-DEV.sublime-workspace"
+			],
+			[
+				"wpsedge",
+				"D:\\vagrant-local\\www\\wpsedge\\htdocs\\wp-content\\themes\\wps-dev\\WPS-DEV.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 739.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 450.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

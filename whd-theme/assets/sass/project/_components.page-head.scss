@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #COMPONENTS PAGE-HEAD
+\*------------------------------------*/
+
+.site-header{	
+	padding: $inuit-base-spacing-unit 0;
+    margin-bottom:$inuit-base-spacing-unit/2;
+    z-index: 999;
+    position: fixed;
+    width:100%;
+    background-color: $color-bg-dark;
+
+    @include media-query(lap-and-up){
+        background-color: transparent;
+    }
+}
+
+
+
+// html,.site{
+//     background-color: $color-body;
+// }
+
+.brand-logo{
+    @include media-query(palm){
+    display: block;
+    max-height:45px;
+    float:left;
+    }
+}
+
+// Fade effect on scroll
+.site-header,
+.site-nav__link{
+    -webkit-transition: all 0.2s ease-in-out 0.2s;
+    -moz-transition: all 0.2s ease-in-out 0.2s;
+    -ms-transition: all 0.2s ease-in-out 0.2s;
+    -o-transition: all 0.2s ease-in-out 0.2s;
+    transition: all 0.2s ease-in-out 0.2s;
+}

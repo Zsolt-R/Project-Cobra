@@ -1,0 +1,75 @@
+/*------------------------------------*\
+    #COMPONENTS MAIN NAV THREE
+\*------------------------------------*/
+@include media-query(palm){
+  .site-nav{
+    display: none;    
+  }
+}
+
+.site-nav-m{
+    display: none;    
+      &.show{        
+        -webkit-animation: fade 1s;
+        animation: fade 1s;
+        display: block;
+        padding-top:halve($spacing-unit);
+        margin-top:halve($spacing-unit);
+        border-top:1px solid darken($color-bg-dark,5);        
+      }
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+
+.site-nav-m-toggler{  
+  border:1px solid $color-white;
+  background-color: transparent;
+  color: $color-white;
+  border-radius: $brand-round;
+  padding:halve($spacing-unit);
+  &:hover,
+  &:focus{
+    background-color: $color-white!important;
+    color: $color-text;
+    border-color:$color-white;
+    outline: none;
+  }
+
+}
+
+@include media-query(lap-and-up){
+  .site-nav-m.show{
+    display: none;
+  }
+}
+@include media-query(lap-and-up){
+  .site-nav-m-toggler{
+    display: none;
+  }
+}
+
+.site-nav-m{
+    .site-nav-m__list{
+    margin:0;
+    text-align: center;
+    list-style: none;  
+
+    a{
+      color:$color-white;
+      padding:quarter($spacing-unit) 0;
+      display: block;
+      &:hover{
+        color: lighten($color-brand,15);
+        text-decoration: none;
+      }
+    }
+  }
+}
